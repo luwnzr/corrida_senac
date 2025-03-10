@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1 Corrida Senac</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados (opcional) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg p-4" style="max-width: 450px; width: 100%;">
+            <!-- Cabeçalho com imagem e título lado a lado -->
+            <div class="row align-items-center mb-4">
+                <div class="col-auto">
+                    <img src="img/img.jpg" alt="Logo Senac" class="img-fluid" style="max-width: 80px;">
+                </div>
+                <div class="col">
+                    <h1 class="text-primary mb-0">1 Corrida Senac 2025</h1>
+                </div>
+            </div>
+
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="endereco" class="form-label">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="faixa-etaria" class="form-label">Faixa Etária:</label>
+                    <select id="faixa-etaria" name="faixa-etaria" class="form-select" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="infantil">Infantil</option>
+                        <option value="adulto">Adulto</option>
+                        <option value="idoso">Idoso</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional, se precisar de funcionalidades JS do Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
